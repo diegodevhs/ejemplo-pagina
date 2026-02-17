@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Suspense } from 'react'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
-import QuoteCalculator from '@/components/quote/QuoteCalculator'
+import QuoteCalculator from '../../components/quote/QuoteCalculator'
 
 export const metadata: Metadata = {
   title: 'Concrete Cost Calculator',

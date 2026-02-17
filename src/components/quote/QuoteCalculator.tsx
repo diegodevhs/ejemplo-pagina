@@ -37,7 +37,7 @@ function inputToParams(input: Required<QuoteInput>): URLSearchParams {
 }
 
 function paramsToInput(sp: URLSearchParams): Required<QuoteInput> {
-  const get = <T>(key: string, fallback: T, cast: (v: string) => T): T => {
+  const get = <T,>(key: string, fallback: T, cast: (v: string) => T): T => {
     const v = sp.get(key)
     return v !== null ? cast(v) : fallback
   }
@@ -129,7 +129,7 @@ function QuoteCalculator() {
   const [result, setResult] = useState<QuoteResult | null>(null)
   const [copied, setCopied] = useState(false)
 
-  const set = useCallback(<K extends keyof QuoteInput>(key: K, value: QuoteInput[K]) => {
+  const set = useCallback(<K extends keyof QuoteInput,>(key: K, value: QuoteInput[K]) => {
     setInput(prev => ({ ...prev, [key]: value }))
   }, [])
 
