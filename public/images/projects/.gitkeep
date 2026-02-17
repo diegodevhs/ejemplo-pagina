@@ -1,0 +1,21 @@
+# Proyectos
+
+Cada proyecto necesita una carpeta numerada (1, 2, 3, etc.) con las siguientes imágenes:
+
+- `cover.jpg` - Imagen de portada del proyecto
+- `1.jpg` - Primera imagen de la galería
+- `2.jpg` - Segunda imagen de la galería
+
+Ejemplo de estructura:
+```
+projects/
+├── 1/
+│   ├── cover.jpg
+│   ├── 1.jpg
+│   └── 2.jpg
+├── 2/
+│   ├── cover.jpg
+│   ├── 1.jpg
+│   └── 2.jpg
+...
+```
