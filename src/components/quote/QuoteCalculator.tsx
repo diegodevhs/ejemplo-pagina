@@ -121,7 +121,7 @@ function Toggle({
 
 // ── Main component ─────────────────────────────────────────────────────────────
 
-export default function QuoteCalculator() {
+function QuoteCalculator() {
   const router = useRouter()
   const searchParams = useSearchParams()
 
@@ -340,3 +340,5 @@ export default function QuoteCalculator() {
     </div>
   )
 }
+
+export default QuoteCalculator
